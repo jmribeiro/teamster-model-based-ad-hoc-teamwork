@@ -1,0 +1,6 @@
+# yaaf
+# Install yaaf using pip install git+https://github.com/jmribeiro/yaaf
+numpy==1.19.5
+matplotlib==3.6.0
+gym==0.21.0
+pyyaml

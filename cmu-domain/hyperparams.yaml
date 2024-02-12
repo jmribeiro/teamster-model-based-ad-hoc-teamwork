@@ -1,0 +1,158 @@
+default:
+
+  PLASTIC:
+    eta: 0.25
+
+  DQN:
+
+    num layers: 2
+    hidden sizes: 512
+
+    learning rate: 0.001
+    discount factor: 0.90
+    target update frequency: 4
+
+    initial exploration rate: 1.00
+    final exploration rate: 0.05
+
+    initial exploration steps: 15000
+    final exploration step: 250000
+
+    batch size: 32
+    buffer size: 15000
+
+  MCTS:
+
+    iterations: 150
+    maximum rollout depth: 20
+    Cp: 1.41
+    discount factor: 0.95
+
+  MBMCTS:
+
+    epochs: 30               # Suggest: 20-30-50-100
+
+    transition model:
+      learning rate: 0.001
+      num layers: 2
+      hidden sizes: 512
+
+    reward model:
+      learning rate: 0.01
+      num layers: 1
+      hidden sizes: 64
+
+    teammates model:
+      learning rate: 0.001
+      num layers: 2
+      hidden sizes: 48
+
+    buffer:
+      max size: 15000
+      batch size: 32
+
+pentagon:
+
+  PLASTIC:
+    eta: 0.25
+
+  DQN:
+
+    num layers: 2
+    hidden sizes: 512
+
+    learning rate: 0.001
+    discount factor: 0.90
+    target update frequency: 4
+
+    initial exploration rate: 1.00
+    final exploration rate: 0.05
+
+    initial exploration steps: 15000
+    final exploration step: 250000
+
+    batch size: 32
+    buffer size: 15000
+
+  MCTS:
+
+    iterations: 150
+    maximum rollout depth: 30
+    Cp: 1.41
+    discount factor: 0.95
+
+  MBMCTS:
+
+    epochs: 30               # Suggest: 20-30-50-100
+
+    transition model:
+      learning rate: 0.001
+      num layers: 2
+      hidden sizes: 512
+
+    reward model:
+      learning rate: 0.01
+      num layers: 1
+      hidden sizes: 64
+
+    teammates model:
+      learning rate: 0.001
+      num layers: 2
+      hidden sizes: 48
+
+    buffer:
+      max size: 15000
+      batch size: 32
+
+ntu:
+
+  PLASTIC:
+    eta: 0.25
+
+  DQN:
+
+    num layers: 2
+    hidden sizes: 512
+
+    learning rate: 0.001
+    discount factor: 0.90
+    target update frequency: 4
+
+    initial exploration rate: 1.00
+    final exploration rate: 0.05
+
+    initial exploration steps: 15000
+    final exploration step: 250000
+
+    batch size: 32
+    buffer size: 15000
+
+  MCTS:
+
+    iterations: 150
+    maximum rollout depth: 15
+    Cp: 1.41
+    discount factor: 0.95
+
+  MBMCTS:
+
+    epochs: 30               # Suggest: 20-30-50-100
+
+    transition model:
+      learning rate: 0.001
+      num layers: 2
+      hidden sizes: 512
+
+    reward model:
+      learning rate: 0.01
+      num layers: 1
+      hidden sizes: 64
+
+    teammates model:
+      learning rate: 0.001
+      num layers: 2
+      hidden sizes: 48
+
+    buffer:
+      max size: 15000
+      batch size: 32
